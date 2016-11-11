@@ -1,9 +1,10 @@
-<a name="0.0.3"></a>
-## [0.0.3](https://github.com/abouthiroppy/stylelint-config-sky/compare/v0.0.2...v0.0.3) (2016-11-11)
+<a name="0.0.4"></a>
+## [0.0.4](https://github.com/abouthiroppy/stylelint-config-sky/compare/v0.0.2...v0.0.4) (2016-11-11)
 
 
 ### Features
 
+* **rule:** allow comment-empty-line-before to except first-nested ([1ac2ee1](https://github.com/abouthiroppy/stylelint-config-sky/commit/1ac2ee1))
 * **rule:** modify my rules ([49fabde](https://github.com/abouthiroppy/stylelint-config-sky/commit/49fabde))
 
 
