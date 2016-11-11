@@ -148,7 +148,9 @@ module.exports = {
 
     'stylelint-disable-reason': 'always-before',
 
-    'comment-empty-line-before': 'always',
+    'comment-empty-line-before': ['always', {
+      except: ['first-nested']
+    }],
     'comment-no-empty': true,
 
     'indentation': 2,

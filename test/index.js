@@ -7,6 +7,7 @@ const sampleCss = `
 @import url("y.css");
 
 .selector1 {
+  margin-top: 24px;
   padding: "1px 2px 3px 4px";
 }
 
@@ -26,8 +27,10 @@ const sampleCss = `
 
 @media (min-width >= 10em) {
   .selector {
+    /* comment 1*/
+    background-color: #ccc;
 
-    /* comment */
+    /* comment 2*/
     transform: translate(1, 1) scale(4);
   }
 }
