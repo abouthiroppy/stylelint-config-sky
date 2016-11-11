@@ -7,7 +7,6 @@ module.exports = {
     'color-hex-case': 'lower',
     'color-hex-length': 'short',
     // 'color-named':
-    'color-no-hex': true,
 
     'font-family-name-quotes': 'always-where-recommended',
     'font-weight-notation': 'named-where-possible',
@@ -22,10 +21,9 @@ module.exports = {
     'function-name-case': 'lower',
     'function-parentheses-newline-inside': 'always-multi-line',
     'function-parentheses-space-inside': 'never-single-line',
-    'function-url-data-uris': 'always',
     'function-url-no-scheme-relative': true,
     'function-url-quotes': 'always',
-    'function-url-scheme-whitelist': ['https', 'data'],
+    'function-url-scheme-whitelist': ['http', 'https', 'data'],
 
     'number-leading-zero': 'never',
     'number-max-precision': 2,
@@ -80,14 +78,14 @@ module.exports = {
     'block-closing-brace-empty-line-before': 'never',
     'block-closing-brace-newline-after': 'always',
     'block-closing-brace-newline-before': 'always',
-    'block-closing-brace-space-after': 'always',
-    'block-closing-brace-space-before': 'always',
+    'block-closing-brace-space-after': 'never-single-line',
+    'block-closing-brace-space-before': 'never-single-line',
     'block-no-empty': true,
     'block-no-single-line': true,
     'block-opening-brace-newline-after': 'always',
-    'block-opening-brace-newline-before': 'never-multi-line',
-    'block-opening-brace-space-after': 'never',
-    'block-opening-brace-space-before': 'never',
+    'block-opening-brace-newline-before': 'never-single-line',
+    'block-opening-brace-space-after': 'never-single-line',
+    'block-opening-brace-space-before': 'always',
 
     'selector-attribute-brackets-space-inside': 'never',
     'selector-attribute-operator-space-after': 'never',
@@ -97,8 +95,6 @@ module.exports = {
     'selector-combinator-space-before': 'always',
     'selector-descendant-combinator-no-non-space': true,
     'selector-max-compound-selectors': 3,
-    'selector-no-attribute': true,
-    'selector-no-combinator': true,
     'selector-no-empty': true,
     'selector-no-id': true,
     'selector-no-qualifying-type': true,
@@ -118,13 +114,13 @@ module.exports = {
 
     'selector-list-comma-newline-after': 'always',
     'selector-list-comma-newline-before': 'never-multi-line',
-    'selector-list-comma-space-after': 'always',
+    'selector-list-comma-space-after': 'always-single-line',
     'selector-list-comma-space-before': 'never',
 
     'root-no-standard-properties': true,
 
     'rule-nested-empty-line-before': 'never',
-    'rule-non-nested-empty-line-before': 'never',
+    'rule-non-nested-empty-line-before': 'always',
 
     'media-feature-colon-space-after': 'always',
     'media-feature-colon-space-before': 'never',
@@ -143,7 +139,6 @@ module.exports = {
     'media-query-list-comma-space-after': 'always',
     'media-query-list-comma-space-before': 'never',
 
-    'at-rule-empty-line-before': 'never',
     'at-rule-name-case': 'lower',
     'at-rule-name-newline-after': 'always-multi-line',
     'at-rule-name-space-after': 'always',
@@ -158,7 +153,7 @@ module.exports = {
 
     'indentation': 2,
     'max-empty-lines': 1,
-    'max-line-length': 40,
+    'max-line-length': 80,
     'max-nesting-depth': 3,
     'no-browser-hacks': true,
     'no-descending-specificity': true,
