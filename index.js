@@ -1,3 +1,5 @@
+// http://stylelint.io/user-guide/rules/
+
 'use strict';
 
 module.exports = {
@@ -103,7 +105,7 @@ module.exports = {
     // 'selector-no-type': true,
     'selector-no-universal': true,
     'selector-no-vendor-prefix': true,
-    'elector-pseudo-class-case': 'lower',
+    'selector-pseudo-class-case': 'lower',
     'selector-pseudo-class-no-unknown': true,
     'selector-pseudo-class-parentheses-space-inside': 'never',
     'selector-pseudo-element-case': 'lower',
