@@ -5,8 +5,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "description": "",
-  "files": [
-  ],
+  "files": [],
   "keywords": [
     "stylelint",
     "stylelint-config"
@@ -29,6 +28,7 @@
   "devDependencies": {
     "ava": "^0.16.0",
     "conventional-changelog-cli": "^1.2.0",
-    "eslint": "^3.9.1"
+    "eslint": "^3.9.1",
+    "stylelint": "^7.5.0"
   }
 }
