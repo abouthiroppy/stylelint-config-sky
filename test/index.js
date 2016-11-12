@@ -47,9 +47,9 @@ const sampleCss = `
 
 test('should return no errored', (t) => {
   return stylelint.lint({
-    code: sampleCss,
-    config: config,
-  }).then(data => {
+    code  : sampleCss,
+    config: config
+  }).then((data) => {
     const {errored, results} = data;
     const {warnings} = results[0];
 
