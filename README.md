@@ -1,5 +1,8 @@
 # stylelint-config-sky
 
+[![Build Status](https://travis-ci.org/lint-config/stylelint-config-sky.svg?branch=master)](https://travis-ci.org/lint-config/stylelint-config-sky)
+[![codecov](https://codecov.io/gh/lint-config/stylelint-config-sky/branch/master/graph/badge.svg)](https://codecov.io/gh/lint-config/stylelint-config-sky)
+[![npm version](https://badge.fury.io/js/stylelint-config-sky.svg)](https://badge.fury.io/js/stylelint-config-sky)
 ## Install
 ```
 $ npm install --save-dev stylelint-config-sky
