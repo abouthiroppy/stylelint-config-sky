@@ -1,6 +1,6 @@
-import config from '../';
-import stylelint from 'stylelint';
 import test from 'ava';
+import stylelint from 'stylelint';
+import config from '../';
 
 const sampleCss = `
 @import url("x.css");
@@ -43,6 +43,23 @@ const sampleCss = `
   background-image: url("http://hoge/x.svg");
   content: "";
 }
+
+/* css-next */
+:root {
+  --color: #fff;
+}
+
+.selector-100 {
+  text-align: center;
+
+  & p {
+    color: #f0f;
+  }
+
+  & a {
+    color: #ff0;
+  }
+}
 `;
 
 test('should return no errored', (t) => {
@@ -50,8 +67,12 @@ test('should return no errored', (t) => {
     code  : sampleCss,
     config: config
   }).then((data) => {
-    const {errored, results} = data;
-    const {warnings} = results[0];
+    const { errored, results } = data;
+    const { warnings } = results[0];
+
+    if (errored) {
+      console.log(warnings);
+    }
 
     t.falsy(errored, 'no errored');
     t.is(warnings.length, 0, 'flags no warnings');

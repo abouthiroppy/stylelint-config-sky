@@ -47,4 +47,21 @@ $ npm install --save-dev stylelint-config-sky
   background-image: url("http://hoge/x.svg");
   content: "";
 }
+
+/* css-next */
+:root {
+  --color: #fff;
+}
+
+.selector-100 {
+  text-align: center;
+
+  & p {
+    color: #f0f;
+  }
+
+  & a {
+    color: #ff0;
+  }
+}
 ```

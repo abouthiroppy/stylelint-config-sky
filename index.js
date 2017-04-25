@@ -122,8 +122,12 @@ module.exports = {
 
     'root-no-standard-properties': true,
 
-    'rule-nested-empty-line-before'    : 'never',
-    'rule-non-nested-empty-line-before': 'always',
+    'rule-empty-line-before': ['always-multi-line', {
+      except: [
+        'after-single-line-comment',
+        'first-nested'
+      ]
+    }],
 
     'media-feature-colon-space-after'          : 'always',
     'media-feature-colon-space-before'         : 'never',
