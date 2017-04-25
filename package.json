@@ -28,11 +28,11 @@
     "tap": true
   },
   "devDependencies": {
-    "ava": "^0.16.0",
+    "ava": "^0.19.1",
     "conventional-changelog-cli": "^1.2.0",
     "eslint": "^3.9.1",
     "eslint-config-sky": "^1.2.1",
-    "nyc": "^8.4.0",
+    "nyc": "^10.2.0",
     "stylelint": "^7.5.0"
   }
 }
