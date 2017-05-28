@@ -149,11 +149,8 @@ module.exports = {
     'at-rule-name-case'              : 'lower',
     'at-rule-name-newline-after'     : 'always-multi-line',
     'at-rule-name-space-after'       : 'always',
-    'at-rule-no-unknown'             : true,
     'at-rule-no-vendor-prefix'       : true,
     'at-rule-semicolon-newline-after': 'always',
-
-    'stylelint-disable-reason': 'always-before',
 
     'comment-empty-line-before': ['always', {
       except: ['first-nested']
@@ -170,7 +167,6 @@ module.exports = {
     'no-empty-source'                 : true,
     'no-eol-whitespace'               : true,
     'no-extra-semicolons'             : true,
-    'no-indistinguishable-colors'     : true,
     'no-invalid-double-slash-comments': true,
     'no-missing-end-of-source-newline': true,
     'no-unknown-animations'           : true
