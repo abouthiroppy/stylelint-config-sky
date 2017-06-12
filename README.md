@@ -14,6 +14,7 @@ $ npm install --save-dev stylelint-config-sky
 @import url("y.css");
 
 .selector1 {
+  margin-top: 24px;
   padding: "1px 2px 3px 4px";
 }
 
@@ -33,8 +34,10 @@ $ npm install --save-dev stylelint-config-sky
 
 @media (min-width >= 10em) {
   .selector {
+    /* comment 1*/
+    background-color: #ccc;
 
-    /* comment */
+    /* comment 2*/
     transform: translate(1, 1) scale(4);
   }
 }
@@ -50,7 +53,16 @@ $ npm install --save-dev stylelint-config-sky
 
 /* css-next */
 :root {
+  --font-size: 1rem;
   --color: #fff;
+  --danger-theme: {
+    background: red;
+    color: hwb(90, 0%, 0%, .5);
+  };
+}
+
+body {
+  font-family: system-ui;
 }
 
 .selector-100 {
@@ -61,7 +73,21 @@ $ npm install --save-dev stylelint-config-sky
   }
 
   & a {
-    color: #ff0;
+    color: var(--color);
   }
 }
+
+.danger {
+  @apply --danger-theme;
+  font-size: calc(var(--font-size) * 2);
+}
+
+p:matches(:first-child, .special) {
+  background-color: hsl(300grad 25% 15% / 70%);
+  color: red;
+}
+
+@custom-media --small-viewport (max-width: 30em);
+
+@custom-selector :--button button, .button;
 ```

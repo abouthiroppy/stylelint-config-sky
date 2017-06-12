@@ -46,7 +46,16 @@ const sampleCss = `
 
 /* css-next */
 :root {
+  --font-size: 1rem;
   --color: #fff;
+  --danger-theme: {
+    background: red;
+    color: hwb(90, 0%, 0%, .5);
+  };
+}
+
+body {
+  font-family: system-ui;
 }
 
 .selector-100 {
@@ -57,9 +66,23 @@ const sampleCss = `
   }
 
   & a {
-    color: #ff0;
+    color: var(--color);
   }
 }
+
+.danger {
+  @apply --danger-theme;
+  font-size: calc(var(--font-size) * 2);
+}
+
+p:matches(:first-child, .special) {
+  background-color: hsl(300grad 25% 15% / 70%);
+  color: red;
+}
+
+@custom-media --small-viewport (max-width: 30em);
+
+@custom-selector :--button button, .button;
 `;
 
 test('should return no errored', (t) => {
