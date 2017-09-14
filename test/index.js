@@ -99,5 +99,5 @@ test('should return no errored', (t) => {
 
     t.falsy(errored, 'no errored');
     t.is(warnings.length, 0, 'flags no warnings');
-  }).catch((err) => t.fail());
+  }).catch((err) => t.fail(err));
 });

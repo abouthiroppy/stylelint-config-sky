@@ -32,7 +32,11 @@
     "conventional-changelog-cli": "^1.2.0",
     "eslint": "^3.9.1",
     "eslint-config-sky": "^1.2.1",
+    "eslint-plugin-import": "^2.7.0",
     "nyc": "^10.2.0",
     "stylelint": "^7.5.0"
+  },
+  "dependencies": {
+    "stylelint-order": "^0.6.0"
   }
 }
