@@ -28,15 +28,15 @@
     "tap": true
   },
   "devDependencies": {
-    "ava": "^0.19.1",
+    "ava": "^0.23.0",
     "conventional-changelog-cli": "^1.2.0",
-    "eslint": "^3.9.1",
+    "eslint": "^4.9.0",
     "eslint-config-sky": "^1.2.1",
     "eslint-plugin-import": "^2.7.0",
-    "nyc": "^10.2.0",
-    "stylelint": "^7.5.0"
+    "nyc": "^11.2.1",
+    "stylelint": "^8.2.0"
   },
   "dependencies": {
-    "stylelint-order": "^0.6.0"
+    "stylelint-order": "^0.7.0"
   }
 }
